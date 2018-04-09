@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>JavaScript POW</title>
+  </head>
+  <body>
+    <div style="margin: auto; width: 60%">
+      <h1>Proof of Work</h1>
+
+      <h2>js-sha256 hashes/second:</h2>
+      <p id="js-rate">Working...</p>
+
+      <h2>wasm-sha256 hashes/second:</h2>
+      <p id="wasm-rate">Working...</p>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="sha256.js"></script>
+    <script type="text/javascript">
+     window.Module = {};
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="csha.js"></script>
+  </body>
+</html>
